@@ -1,0 +1,27 @@
+﻿<Window x:Class="WpfApp__ControlTemplate_Style.Windows.FirstPageWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp__ControlTemplate_Style.Windows"
+        mc:Ignorable="d"
+        Title="FirstPageWindow" Height="900" Width="500">
+    <Grid Background="#EFF7FB">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="0.8*"/>
+            <RowDefinition Height="1.5*"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <Label Grid.Row="0" Content="clients" VerticalAlignment="Center" Style="{DynamicResource label_headline}" FontSize="50"/>
+
+        <StackPanel Grid.Row="1" Margin="0 40 0 0">
+
+            <Label Style="{DynamicResource label_headline}" Content="username" FontWeight="SemiBold" Margin="0 0 0 10" FontSize="30"/>
+            <TextBox Style="{DynamicResource textbox1}" Margin="0 5 0 10" Text="enter your username"/>
+            <Label Style="{DynamicResource label_headline}" Content="password" FontWeight="SemiBold" Margin="0 0 0 10" FontSize="30"/>
+            <TextBox Style="{DynamicResource textbox1}"  />
+
+        </StackPanel>
+    </Grid>
+</Window>

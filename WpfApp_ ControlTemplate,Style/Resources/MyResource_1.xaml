@@ -1,0 +1,21 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+
+
+    <Style x:Key="label_headline" TargetType="Label">
+        <Setter Property="Foreground" Value="#08125E"/>
+        <Setter Property="FontWeight" Value="Bold"/>
+        <Setter Property="FontSize" Value="20"/>
+        <Setter Property="HorizontalAlignment" Value="Center"/>
+        <Setter Property="FontFamily" Value="Segoe UI"/>
+
+    </Style>
+
+    <Style x:Key="textbox1" TargetType="TextBox">
+        <Setter Property="Height" Value="90"/>
+        <Setter Property="Foreground" Value="Gray"/>
+        <Setter Property="TextAlignment" Value="Center"/>
+  
+    </Style>
+    
+</ResourceDictionary>
