@@ -18,10 +18,12 @@
         <StackPanel Grid.Row="1" Margin="0 40 0 0">
 
             <Label Style="{DynamicResource label_headline}" Content="username" FontWeight="SemiBold" Margin="0 0 0 10" FontSize="30"/>
-            <TextBox Style="{DynamicResource textbox1}" Margin="0 5 0 10" Text="enter your username"/>
+            <TextBox Style="{DynamicResource textbox1}" Margin="10 5 10 10" Text="enter  your  username" VerticalContentAlignment="Center"/>
             <Label Style="{DynamicResource label_headline}" Content="password" FontWeight="SemiBold" Margin="0 0 0 10" FontSize="30"/>
-            <TextBox Style="{DynamicResource textbox1}"  />
+            <TextBox Style="{DynamicResource textbox1}" Margin="10 10 10 5" Text="enter  your  password" VerticalContentAlignment="Center" />
 
         </StackPanel>
+
+        <Button Grid.Row="2" Style="{DynamicResource button1}" VerticalAlignment="Bottom" Content="log in"/>
     </Grid>
 </Window>

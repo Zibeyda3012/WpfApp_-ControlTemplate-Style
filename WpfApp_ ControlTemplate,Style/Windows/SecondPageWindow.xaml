@@ -5,8 +5,23 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WpfApp__ControlTemplate_Style.Windows"
         mc:Ignorable="d"
-        Title="SecondPageWindow" Height="450" Width="800">
-    <Grid>
-        
+        Title="SecondPageWindow"  Height="900" Width="500">
+    <Grid Background="#EFF7FB">
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="0.9*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="0.5*"/>
+        </Grid.RowDefinitions>
+
+        <StackPanel Grid.Row="0"  Margin="0 25 0 0">
+            <Label Grid.Row="0" Content="clients" VerticalAlignment="Center" Style="{DynamicResource label_headline}" FontSize="50"/>
+            <Label Style="{DynamicResource label1}" Content="Welcome Tunar!"/>
+        </StackPanel>
+
+        <Button Grid.Row="1" Style="{DynamicResource button1}" Height="230" Content="create new client" FontSize="50" Margin="10 0 10 0"/>
+        <Button Grid.Row="2" Style="{DynamicResource button1}" Height="230" Content="all clients" FontSize="50"  Margin="10 0 10 0"/>
+
     </Grid>
 </Window>

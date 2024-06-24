@@ -13,9 +13,47 @@
 
     <Style x:Key="textbox1" TargetType="TextBox">
         <Setter Property="Height" Value="90"/>
-        <Setter Property="Foreground" Value="Gray"/>
+        <Setter Property="Foreground" Value="LightGray"/>
         <Setter Property="TextAlignment" Value="Center"/>
-  
+        <Setter Property="FontSize" Value="15"/>
+        <Setter Property="VerticalContentAlignment" Value="Center"/>
+
     </Style>
-    
+
+
+    <Style x:Key="button1" TargetType="Button">
+        <Setter Property="Height" Value="70"/>
+        <Setter Property="Foreground" Value="White"/>
+        <Setter Property="Background" Value="#08125E"/>
+        <Setter Property="FontSize" Value="25"/>
+        <Setter Property="Margin" Value="10 0 10 40"/>
+        <Setter Property="FontFamily" Value="Segoe UI"/>
+        <Setter Property="VerticalContentAlignment" Value="Center"/>
+        <Style.Resources>
+            <Style TargetType="Border">
+                <Setter Property="CornerRadius" Value="5"/>
+            </Style>
+        </Style.Resources>
+
+    </Style>
+
+
+    <Style x:Key="label1" TargetType="Label">
+        <Setter Property="FontSize" Value="17"/>
+        <Setter Property="HorizontalAlignment" Value="Center"/>
+        <Setter Property="FontFamily" Value="Segoe UI"/>
+        <Setter Property="Foreground" Value="#39AFDD"/>
+        <Setter Property="FontWeight" Value="SemiBold"/>
+
+    </Style>
+
+    <Style x:Key="label2" TargetType="Label">
+        <Setter Property="FontSize" Value="20"/>
+        <Setter Property="FontFamily" Value="Segoe UI"/>
+        <Setter Property="Foreground" Value="#08125E"/>
+        <Setter Property="FontWeight" Value="SemiBold"/>
+        <Setter Property="Margin" Value="10"/>
+
+    </Style>
+
 </ResourceDictionary>

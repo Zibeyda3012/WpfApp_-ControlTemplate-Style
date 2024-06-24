@@ -5,8 +5,70 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WpfApp__ControlTemplate_Style.Windows"
         mc:Ignorable="d"
-        Title="FourthPageWindow" Height="450" Width="800">
-    <Grid>
+        Title="FourthPageWindow" Height="1000" Width="500">
+    <Grid Background="#EFF7FB">
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="13*"/>
+        </Grid.RowDefinitions>
+
+        <Grid Grid.Row="0" Background="White">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+
+            <Label Grid.Column="0" Style="{DynamicResource label2}" Content="clients" FontWeight="Bold"/>
+            <Label Grid.Column="1" Style="{DynamicResource label2}" Content="home" HorizontalAlignment="Right" />
+        </Grid>
+
+        <StackPanel Grid.Row="1">
+
+            <StackPanel>
+                <Label Style="{DynamicResource label2}" Content="Name of the order"/>
+                <TextBox Style="{DynamicResource textbox1}" Margin="15 0 10 0" Text="Type the order name" VerticalContentAlignment="Center" TextAlignment="Left" Padding="15"/>
+            </StackPanel>
+
+            <StackPanel>
+                <Label Style="{DynamicResource label2}" Content="Order quantity"/>
+                <TextBox Style="{DynamicResource textbox1}" Margin="15 0 10 0" Text="How many do you want?" VerticalContentAlignment="Center" TextAlignment="Left" Padding="15"/>
+            </StackPanel>
+
+            <StackPanel>
+                <Label Style="{DynamicResource label2}" Content="Order opening day"/>
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition/>
+                        <ColumnDefinition/>
+                        <ColumnDefinition/>
+                    </Grid.ColumnDefinitions>
+
+                    <TextBox Grid.Column="0" Style="{DynamicResource textbox1}" Width="140" Text="Day" TextAlignment="Left" Padding="15"/>
+                    <TextBox Grid.Column="1" Style="{DynamicResource textbox1}" Width="140" Text="Month" TextAlignment="Left" Padding="15"/>
+                    <TextBox Grid.Column="2" Style="{DynamicResource textbox1}" Width="140" Text="Year" TextAlignment="Left" Padding="15"/>
+                </Grid>
+            </StackPanel>
+
+
+            <StackPanel>
+                <Label Style="{DynamicResource label2}" Content="Order delivery day"/>
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition/>
+                        <ColumnDefinition/>
+                        <ColumnDefinition/>
+                    </Grid.ColumnDefinitions>
+
+                    <TextBox Grid.Column="0" Style="{DynamicResource textbox1}" Width="140" Text="Day" TextAlignment="Left" Padding="15"/>
+                    <TextBox Grid.Column="1" Style="{DynamicResource textbox1}" Width="140" Text="Month" TextAlignment="Left" Padding="15"/>
+                    <TextBox Grid.Column="2" Style="{DynamicResource textbox1}" Width="140" Text="Year" TextAlignment="Left" Padding="15"/>
+                </Grid>
+            </StackPanel>
+
+            <Button Style="{DynamicResource button1}" Margin="10 40 10 10" Content="Register"/>
+
+        </StackPanel>
         
     </Grid>
 </Window>
